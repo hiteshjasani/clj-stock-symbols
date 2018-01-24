@@ -1,10 +1,11 @@
 (ns clj-stock-symbols.core
   (:require [clojure.string :as cs]
+            [clojure.java.io :as io]
             [clojure.data.csv :as csv]
             [camel-snake-kebab.core :as csk]))
 
 ;; source: http://www.nasdaq.com/screening/companies-by-industry.aspx
-(def csv-file "resources/companylist.csv")
+(def csv-file (io/resource "companylist.csv"))
 
 (defn clean-trailing-commas
   "Remove trailing commas from lines and repackage input as a single
