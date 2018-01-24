@@ -10,11 +10,9 @@ A Clojure library containing public US company stock symbols.
 ``` clojure
 (:require [clj-stock-symbols.core :as ss])
 
-
-(ss/load-companies)
+(take 3 (ss/load-companies))
+=> ({:symbol "PIH", :name "1347 Property Insurance Holdings, Inc.", :last-sale "6.9", :market-cap "41294885.4", :adr-tso "n/a", :ipo-year "2014", :sector "Finance", :industry "Property-Casualty Insurers", :summary-quote "http://www.nasdaq.com/symbol/pih"} {:symbol "TURN", :name "180 Degree Capital Corp.", :last-sale "2.05", :market-cap "63799202.1", :adr-tso "n/a", :ipo-year "n/a", :sector "Finance", :industry "Finance/Investors Services", :summary-quote "http://www.nasdaq.com/symbol/turn"} {:symbol "FLWS", :name "1-800 FLOWERS.COM, Inc.", :last-sale "11.75", :market-cap "759337428.5", :adr-tso "n/a", :ipo-year "1999", :sector "Consumer Services", :industry "Other Specialty Stores", :summary-quote "http://www.nasdaq.com/symbol/flws"})
 ```
-
-
 
 ## License
 
