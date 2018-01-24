@@ -6,4 +6,7 @@
   :dependencies [[org.clojure/clojure "1.9.0"]
                  [org.clojure/spec.alpha "0.1.123"]
                  [org.clojure/data.csv "0.1.4"]
-                 [camel-snake-kebab "0.4.0"]])
+                 [camel-snake-kebab "0.4.0"]]
+  :deploy-repositories [["releases" {:url "https://clojars.org/repo"
+                                     :sign-releases false}
+                        ]])
