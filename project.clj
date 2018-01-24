@@ -1,4 +1,4 @@
-(defproject org.jasani/clj-stock-symbols "0.1.0-SNAPSHOT"
+(defproject org.jasani/clj-stock-symbols "0.1.0"
   :description "Library of public US company stock symbols"
   :url "https://github.com/hiteshjasani/clj-stock-symbols"
   :license {:name "Eclipse Public License"

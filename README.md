@@ -1,14 +1,24 @@
 # clj-stock-symbols
 
-A Clojure library designed to ... well, that part is up to you.
+[![Clojars Project](https://img.shields.io/clojars/v/org.jasani/clj-stock-symbols.svg)](https://clojars.org/org.jasani/clj-stock-symbols)
+
+A Clojure library containing public US company stock symbols.
+
 
 ## Usage
 
-FIXME
+``` clojure
+(:require [clj-stock-symbols.core :as ss])
+
+
+(ss/load-companies)
+```
+
+
 
 ## License
 
-Copyright © 2018 FIXME
+Copyright © 2018 Hitesh Jasani
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
