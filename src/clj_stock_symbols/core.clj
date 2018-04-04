@@ -31,6 +31,11 @@
             repeat)
        (rest csv-str-lines)))
 
+(defn trim-symbols
+  "Fix stock symbols with extra spaces"
+  [ms]
+  (map #(update % :symbol cs/trim) ms))
+
 (defn load-companies
   ([] (load-companies csv-file))
   ([^String csv-filename]
@@ -38,4 +43,5 @@
        slurp
        clean-trailing-commas
        csv/read-csv
-       csv-data->maps)))
+       csv-data->maps
+       trim-symbols)))
